@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio – Awa Salif DOUMBIA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HERO / PRÉSENTATION -->
+<header class="hero">
+  <div class="hero-card">
+
+    <!-- PHOTO -->
+    <input type="file" id="photoInput" accept="image/*" hidden>
+    <img id="profilePhoto" src="assets/photo.jpg" alt="Photo"
+         onclick="photoInput.click()">
+
+    <h1 contenteditable="true" data-key="name">
+      Awa Salif DOUMBIA
+    </h1>
+
+    <h2 contenteditable="true" data-key="title">
+      Étudiante en Génie des Réseaux Informatiques et Télécoms
+    </h2>
+
+    <p contenteditable="true" data-key="presentation">
+      Étudiante en 3ᵉ année de BUT Réseaux et Télécommunications, spécialité Cybersécurité,
+      passionnée par la sécurisation des systèmes d'information.
+    </p>
+
+    <!-- CV -->
+    <div class="buttons">
+      <a id="cvLink" href="assets/cv.pdf" download class="btn">Voir mon CV</a>
+      <input type="file" id="cvInput" accept="application/pdf" hidden>
+      <button class="btn outline" onclick="cvInput.click()">Changer le CV</button>
+    </div>
+
+  </div>
+</header>
+
+<!-- FORMATION -->
+<section class="section bg-light">
+  <h3>FORMATION</h3>
+  <div id="formations" class="grid" data-key="formations">
+    <div class="card" contenteditable="true">
+      BUT Réseaux et Télécommunications – Cybersécurité<br>
+      Université Sorbonne Paris Nord<br>
+      2025 – 2026
+    </div>
+  </div>
+  <button onclick="addItem('formations')">➕ Ajouter une formation</button>
+</section>
+
+<!-- EXPÉRIENCE PRO -->
+<section class="section">
+  <h3>EXPÉRIENCE PROFESSIONNELLE</h3>
+  
+
+  <div id="experiences" class="grid" data-key="experiences">
+    <div class="card" contenteditable="true">
+    <a href="detail.html?id=stage-db" class="detail-link"></a>
+      Stage Base de Données – ITMA<br>
+      Mai 2024 – Juin 2024<br>
+      Modélisation, requêtes SQL, interface utilisateur
+    </div>
+  </div>
+  <button onclick="addItem('experiences')">➕ Ajouter une expérience</button>
+</section>
+
+<!-- COMPÉTENCES -->
+<section class="section bg-light">
+  <h3>COMPÉTENCES TECHNIQUES</h3>
+  <div id="skills" class="grid" data-key="skills">
+    <div class="card" contenteditable="true">
+      Réseaux : TCP/IP, HTTP(S), DHCP, SNMP, SSH – Analyse de trafic
+    </div>
+    <div class="card" contenteditable="true">
+      Cybersécurité : SIEM, analyse de vulnérabilités, supervision
+    </div>
+    <div class="card" contenteditable="true">
+      Programmation : Python, C, C++, Bash, HTML, CSS
+    </div>
+  </div>
+  <button onclick="addItem('skills')">➕ Ajouter une compétence</button>
+</section>
+
+<!-- PROJETS -->
+<section class="section">
+  <h3>PROJETS RÉALISÉS</h3>
+  <div id="projects" class="grid" data-key="projects">
+    <div class="card" contenteditable="true">
+      Conception Base de Données SQL – Projet professionnel<br>
+      MySQL – Google Forms – Mai 2024
+    </div>
+  </div>
+  <button onclick="addItem('projects')">➕ Ajouter un projet</button>
+</section>
+
+<!-- QUALITÉS -->
+<section class="section bg-light">
+  <h3>MES QUALITÉS</h3>
+  <div id="qualities" class="grid" data-key="qualities">
+    <div class="card" contenteditable="true">Curieuse et motivée</div>
+    <div class="card" contenteditable="true">Esprit d’analyse</div>
+    <div class="card" contenteditable="true">Travail en équipe</div>
+  </div>
+  <button onclick="addItem('qualities')">➕ Ajouter une qualité</button>
+</section>
+
+<!-- CONTACT -->
+<section class="section bg-dark">
+  <h3>MES COORDONNÉES</h3>
+  <p>📧 <a href="mailto:awainformat2024@gmail.com"
+         contenteditable="true"
+         data-key="email">awainformat2024@gmail.com</a></p>
+  <p>📞 <a href="tel:+33749294193"
+         contenteditable="true"
+         data-key="phone">+33 7 49 29 41 93</a></p>
+  <p contenteditable="true" data-key="location">Paris, France</p>
+</section>
+
+<footer>
+  © 2025 – Awa Salif DOUMBIA
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

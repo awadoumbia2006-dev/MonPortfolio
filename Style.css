@@ -1,0 +1,171 @@
+/* ===== RESET & BASE ===== */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: radial-gradient(circle at top, #111 0%, #000 70%);
+  color: #eaeaea;
+}
+
+/* ===== HERO ===== */
+.hero {
+  background: linear-gradient(135deg, #4b000f, #7a0c1e, #a4162a);
+  padding: 90px 20px;
+  text-align: center;
+  box-shadow: inset 0 -20px 60px rgba(0,0,0,0.8);
+}
+
+.hero-card {
+  background: rgba(0,0,0,0.75);
+  backdrop-filter: blur(10px);
+  max-width: 420px;
+  margin: auto;
+  padding: 35px;
+  border-radius: 22px;
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow:
+    0 0 25px rgba(164,22,42,0.6),
+    0 0 60px rgba(164,22,42,0.3);
+}
+
+/* ===== PHOTO ===== */
+.hero img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+  border: 4px solid #a4162a;
+  box-shadow:
+    0 0 15px #a4162a,
+    0 0 40px rgba(164,22,42,0.7);
+  transition: transform 0.3s;
+}
+
+.hero img:hover {
+  transform: scale(1.05);
+}
+
+/* ===== TITRES ===== */
+h1 {
+  color: #ffccd5;
+  font-size: 2.2rem;
+  text-shadow:
+    0 0 5px #a4162a,
+    0 0 15px #a4162a;
+}
+
+h2 {
+  color: #ff8fa3;
+  font-weight: 500;
+}
+
+/* ===== SECTIONS ===== */
+.section {
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.section h3 {
+  font-size: 1.9rem;
+  margin-bottom: 25px;
+  color: #ffccd5;
+  text-shadow:
+    0 0 5px #a4162a,
+    0 0 15px rgba(164,22,42,0.8);
+}
+
+/* ===== VARIANTES FOND ===== */
+.bg-light {
+  background: linear-gradient(180deg, #140005, #1a0007);
+}
+
+.bg-dark {
+  background: #050505;
+}
+
+/* ===== GRID ===== */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
+  gap: 20px;
+}
+
+/* ===== CARTES ===== */
+.card {
+  background: linear-gradient(145deg, #0d0d0d, #1a1a1a);
+  padding: 22px;
+  border-radius: 14px;
+  border-left: 6px solid #a4162a;
+  box-shadow:
+    0 0 15px rgba(164,22,42,0.3);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow:
+    0 0 25px rgba(164,22,42,0.9),
+    0 0 60px rgba(164,22,42,0.4);
+}
+
+/* ===== TEXTE ÉDITABLE ===== */
+[contenteditable="true"]:focus {
+  outline: 2px solid #ff8fa3;
+  background: rgba(255,255,255,0.05);
+}
+
+/* ===== BOUTONS ===== */
+.btn,
+button {
+  background: linear-gradient(135deg, #7a0c1e, #a4162a);
+  color: white;
+  padding: 12px 26px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  margin: 8px;
+  font-weight: bold;
+  box-shadow:
+    0 0 10px #a4162a,
+    0 0 30px rgba(164,22,42,0.6);
+  transition: all 0.3s;
+}
+
+.btn:hover,
+button:hover {
+  transform: scale(1.08);
+  box-shadow:
+    0 0 20px #ff4d6d,
+    0 0 60px rgba(255,77,109,0.8);
+}
+
+/* ===== BOUTON OUTLINE ===== */
+.btn.outline {
+  background: transparent;
+  border: 2px solid #ff4d6d;
+  color: #ffccd5;
+  box-shadow:
+    0 0 12px rgba(255,77,109,0.7);
+}
+
+/* ===== CONTACT ===== */
+.bg-dark a {
+  color: #ffccd5;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+.bg-dark a:hover {
+  text-shadow: 0 0 10px #ff4d6d;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  padding: 25px;
+  background: #000;
+  color: #aaa;
+  font-size: 0.9rem;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
